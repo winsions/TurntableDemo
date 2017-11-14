@@ -10,12 +10,6 @@
 
 @interface TurntableView : UIView
 
-@property (nonatomic,assign) float angle;
-@property (nonatomic,strong) NSTimer * timer;
-@property (nonatomic,assign) BOOL updateEnable;
-@property (nonatomic,strong)UIView *transparentView;
-
-
 +(TurntableView *)createTurnableView;
 
 @end

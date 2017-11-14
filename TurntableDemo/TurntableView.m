@@ -9,13 +9,9 @@
 #import "TurntableView.h"
 
 #define WIDTH [UIScreen mainScreen].bounds.size.width
-
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
-
 #define CircleRadius 100
-
 #define CircleDiam (2*CircleRadius)
-
 #define MoveCircleRadius 30
 
 #define screenW self.view.bounds.size.width
@@ -28,6 +24,15 @@ typedef NS_ENUM(NSInteger,ViewLocation){
     RightLocation,
     DownLocation
 };
+
+@interface TurntableView ()
+
+@property (nonatomic,assign) float angle;
+@property (nonatomic,strong) NSTimer * timer;
+@property (nonatomic,assign) BOOL updateEnable;
+@property (nonatomic,strong)UIView *transparentView;
+
+@end
 
 @implementation TurntableView
 
@@ -185,7 +190,7 @@ typedef NS_ENUM(NSInteger,ViewLocation){
         if(fabs(_angle)>1)
         {
             [self setRotate:_angle];
-            _angle = 0.99 * _angle;
+            _angle = 0.95 * _angle;
         }
         else
         {
