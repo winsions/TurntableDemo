@@ -16,6 +16,12 @@
 		181D77761FB9A2DA00E07EDE /* TurntableDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D77751FB9A2DA00E07EDE /* TurntableDemoTests.m */; };
 		181D77811FB9A2DA00E07EDE /* TurntableDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D77801FB9A2DA00E07EDE /* TurntableDemoUITests.m */; };
 		181D77901FB9A3C200E07EDE /* TurntableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D778F1FB9A3C200E07EDE /* TurntableView.m */; };
+		18F22D8B1FBBD80A00273205 /* ZJTimerTaskStatisticsTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22D831FBBD80900273205 /* ZJTimerTaskStatisticsTimeModel.m */; };
+		18F22D8C1FBBD80A00273205 /* ZJTaskTimeInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22D851FBBD80900273205 /* ZJTaskTimeInfoModel.m */; };
+		18F22D8D1FBBD80A00273205 /* ZJTimerTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22D861FBBD80900273205 /* ZJTimerTaskModel.m */; };
+		18F22D8E1FBBD80A00273205 /* ZJTimersManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22D8A1FBBD80A00273205 /* ZJTimersManger.m */; };
+		18F22D911FBBDA7900273205 /* ZJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22D901FBBDA7900273205 /* ZJBaseModel.m */; };
+		18F22D9C1FBBE10900273205 /* TurntableBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22D9B1FBBE10900273205 /* TurntableBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,19 @@
 		181D77821FB9A2DA00E07EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D778E1FB9A3C200E07EDE /* TurntableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurntableView.h; sourceTree = "<group>"; };
 		181D778F1FB9A3C200E07EDE /* TurntableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurntableView.m; sourceTree = "<group>"; };
+		18F22D831FBBD80900273205 /* ZJTimerTaskStatisticsTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTimerTaskStatisticsTimeModel.m; sourceTree = "<group>"; };
+		18F22D841FBBD80900273205 /* ZJTimerTaskStatisticsTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTimerTaskStatisticsTimeModel.h; sourceTree = "<group>"; };
+		18F22D851FBBD80900273205 /* ZJTaskTimeInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTaskTimeInfoModel.m; sourceTree = "<group>"; };
+		18F22D861FBBD80900273205 /* ZJTimerTaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTimerTaskModel.m; sourceTree = "<group>"; };
+		18F22D871FBBD80900273205 /* ZJTaskTimeInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTaskTimeInfoModel.h; sourceTree = "<group>"; };
+		18F22D881FBBD80900273205 /* ZJTimerTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTimerTaskModel.h; sourceTree = "<group>"; };
+		18F22D891FBBD80A00273205 /* ZJTimersManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTimersManger.h; sourceTree = "<group>"; };
+		18F22D8A1FBBD80A00273205 /* ZJTimersManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTimersManger.m; sourceTree = "<group>"; };
+		18F22D8F1FBBDA7800273205 /* ZJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBaseModel.h; sourceTree = "<group>"; };
+		18F22D901FBBDA7900273205 /* ZJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBaseModel.m; sourceTree = "<group>"; };
+		18F22D921FBBDB0400273205 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18F22D9A1FBBE10900273205 /* TurntableBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurntableBaseView.h; sourceTree = "<group>"; };
+		18F22D9B1FBBE10900273205 /* TurntableBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurntableBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +123,7 @@
 		181D775B1FB9A2DA00E07EDE /* TurntableDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18F22D931FBBDD0700273205 /* 视图旋转 */,
 				181D775C1FB9A2DA00E07EDE /* AppDelegate.h */,
 				181D775D1FB9A2DA00E07EDE /* AppDelegate.m */,
 				181D775F1FB9A2DA00E07EDE /* ViewController.h */,
@@ -112,6 +132,7 @@
 				181D77651FB9A2DA00E07EDE /* Assets.xcassets */,
 				181D77671FB9A2DA00E07EDE /* LaunchScreen.storyboard */,
 				181D776A1FB9A2DA00E07EDE /* Info.plist */,
+				18F22D921FBBDB0400273205 /* PrefixHeader.pch */,
 				181D776B1FB9A2DA00E07EDE /* main.m */,
 				181D778E1FB9A3C200E07EDE /* TurntableView.h */,
 				181D778F1FB9A3C200E07EDE /* TurntableView.m */,
@@ -135,6 +156,33 @@
 				181D77821FB9A2DA00E07EDE /* Info.plist */,
 			);
 			path = TurntableDemoUITests;
+			sourceTree = "<group>";
+		};
+		18F22D821FBBD7F400273205 /* 定时器管理 */ = {
+			isa = PBXGroup;
+			children = (
+				18F22D8F1FBBDA7800273205 /* ZJBaseModel.h */,
+				18F22D901FBBDA7900273205 /* ZJBaseModel.m */,
+				18F22D871FBBD80900273205 /* ZJTaskTimeInfoModel.h */,
+				18F22D851FBBD80900273205 /* ZJTaskTimeInfoModel.m */,
+				18F22D891FBBD80A00273205 /* ZJTimersManger.h */,
+				18F22D8A1FBBD80A00273205 /* ZJTimersManger.m */,
+				18F22D881FBBD80900273205 /* ZJTimerTaskModel.h */,
+				18F22D861FBBD80900273205 /* ZJTimerTaskModel.m */,
+				18F22D841FBBD80900273205 /* ZJTimerTaskStatisticsTimeModel.h */,
+				18F22D831FBBD80900273205 /* ZJTimerTaskStatisticsTimeModel.m */,
+			);
+			path = "定时器管理";
+			sourceTree = "<group>";
+		};
+		18F22D931FBBDD0700273205 /* 视图旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				18F22D821FBBD7F400273205 /* 定时器管理 */,
+				18F22D9A1FBBE10900273205 /* TurntableBaseView.h */,
+				18F22D9B1FBBE10900273205 /* TurntableBaseView.m */,
+			);
+			path = "视图旋转";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				181D77611FB9A2DA00E07EDE /* ViewController.m in Sources */,
+				18F22D8D1FBBD80A00273205 /* ZJTimerTaskModel.m in Sources */,
 				181D776C1FB9A2DA00E07EDE /* main.m in Sources */,
+				18F22D9C1FBBE10900273205 /* TurntableBaseView.m in Sources */,
 				181D77901FB9A3C200E07EDE /* TurntableView.m in Sources */,
+				18F22D8C1FBBD80A00273205 /* ZJTaskTimeInfoModel.m in Sources */,
+				18F22D8E1FBBD80A00273205 /* ZJTimersManger.m in Sources */,
+				18F22D8B1FBBD80A00273205 /* ZJTimerTaskStatisticsTimeModel.m in Sources */,
+				18F22D911FBBDA7900273205 /* ZJBaseModel.m in Sources */,
 				181D775E1FB9A2DA00E07EDE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +492,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MR54Q224XZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TurntableDemo/jie/PaymentModule/支付宝",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TurntableDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = TurntableDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -455,6 +514,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MR54Q224XZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TurntableDemo/jie/PaymentModule/支付宝",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TurntableDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = TurntableDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
