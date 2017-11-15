@@ -21,11 +21,21 @@
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define CircleOptionSmallRadius 40
+#define CircleOptionBigRadius 60
+
+#define CircleRadius 100
+#define CircleDiam (2*CircleRadius)
+#define MoveCircleRadius 30
+
+#define screenW self.view.bounds.size.width
+
 // block self
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 
 
 #import "TurntableBaseView.h"
-
+#import "ZJFactoryMethod.h"
+#import "UIView+MJExtension.h"
 
 #endif /* PrefixHeader_pch */

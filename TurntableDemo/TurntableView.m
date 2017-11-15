@@ -8,12 +8,6 @@
 
 #import "TurntableView.h"
 
-#define CircleRadius 100
-#define CircleDiam (2*CircleRadius)
-#define MoveCircleRadius 30
-
-#define screenW self.view.bounds.size.width
-
 typedef NS_ENUM(NSInteger,ViewLocation){
     LeftLocation = 0,
     UpLocation,
