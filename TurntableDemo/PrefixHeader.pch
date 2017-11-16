@@ -24,6 +24,8 @@
 #define CircleOptionSmallRadius 40
 #define CircleOptionBigRadius 60
 
+#define CirclePageMargin 20
+
 #define CircleRadius 100
 #define CircleDiam (2*CircleRadius)
 #define MoveCircleRadius 30

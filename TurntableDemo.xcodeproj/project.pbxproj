@@ -28,7 +28,7 @@
 		18F22DAC1FBC1D0300273205 /* ZJFactoryMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22DAB1FBC1D0300273205 /* ZJFactoryMethod.m */; };
 		18F22DAF1FBC21D900273205 /* CircleViewManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22DAE1FBC21D900273205 /* CircleViewManger.m */; };
 		18F22DB21FBC465D00273205 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22DB01FBC465D00273205 /* UIView+MJExtension.m */; };
-		18F22DB61FBC4FD100273205 /* CircleBaseLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F22DB51FBC4FD100273205 /* CircleBaseLayoutView.m */; };
+		18F976B01FBD822F00C2FA4B /* CircleLayoutPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F976AF1FBD822F00C2FA4B /* CircleLayoutPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +92,8 @@
 		18F22DAE1FBC21D900273205 /* CircleViewManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewManger.m; sourceTree = "<group>"; };
 		18F22DB01FBC465D00273205 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		18F22DB11FBC465D00273205 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
-		18F22DB41FBC4FD100273205 /* CircleBaseLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleBaseLayoutView.h; sourceTree = "<group>"; };
-		18F22DB51FBC4FD100273205 /* CircleBaseLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleBaseLayoutView.m; sourceTree = "<group>"; };
+		18F976AE1FBD822F00C2FA4B /* CircleLayoutPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleLayoutPathView.h; sourceTree = "<group>"; };
+		18F976AF1FBD822F00C2FA4B /* CircleLayoutPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleLayoutPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,8 +254,8 @@
 		18F22DB31FBC4DAE00273205 /* 布局基层处理 */ = {
 			isa = PBXGroup;
 			children = (
-				18F22DB41FBC4FD100273205 /* CircleBaseLayoutView.h */,
-				18F22DB51FBC4FD100273205 /* CircleBaseLayoutView.m */,
+				18F976AE1FBD822F00C2FA4B /* CircleLayoutPathView.h */,
+				18F976AF1FBD822F00C2FA4B /* CircleLayoutPathView.m */,
 			);
 			path = "布局基层处理";
 			sourceTree = "<group>";
@@ -395,7 +395,6 @@
 			files = (
 				181D77611FB9A2DA00E07EDE /* ViewController.m in Sources */,
 				18F22D8D1FBBD80A00273205 /* ZJTimerTaskModel.m in Sources */,
-				18F22DB61FBC4FD100273205 /* CircleBaseLayoutView.m in Sources */,
 				18F22DAF1FBC21D900273205 /* CircleViewManger.m in Sources */,
 				18F22DA71FBC157E00273205 /* CircleBigView.m in Sources */,
 				181D776C1FB9A2DA00E07EDE /* main.m in Sources */,
@@ -410,6 +409,7 @@
 				18F22DAC1FBC1D0300273205 /* ZJFactoryMethod.m in Sources */,
 				18F22DA31FBC154C00273205 /* CircleSmallView.m in Sources */,
 				181D775E1FB9A2DA00E07EDE /* AppDelegate.m in Sources */,
+				18F976B01FBD822F00C2FA4B /* CircleLayoutPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

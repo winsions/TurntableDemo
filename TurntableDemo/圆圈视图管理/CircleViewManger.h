@@ -19,4 +19,6 @@ typedef  NS_ENUM(NSInteger,UILayoutType){
 
 -(void)setUILayoutWithType:(NSInteger)layoutType;
 
+-(NSMutableArray *)getViewData;
+
 @end

@@ -64,14 +64,21 @@
  */
 -(void)circleUILayout{
     for (int i =0; i < self.viewDataArray.count; i++) {
-        CGFloat diameter = WIDTH - 20 * 2 - 40 * 2;
-        CGPoint centerPoint = CGPointMake(WIDTH/2.0, HEIGHT/2.0);
+        CGFloat diameter = WIDTH - CirclePageMargin * 2 - CircleOptionSmallRadius * 2;
+        CGPoint centerPoint = CGPointMake(WIDTH/2.0, WIDTH/2.0);
         CGFloat unitAngle = 360.0 / self.viewDataArray.count;
         CGPoint viewPoint = [ZJFactoryMethod calcCircleCoordinateWithCenter:centerPoint andWithAngle:unitAngle * (i+1) andWithRadius:diameter / 2.0];
         CircleSmallView *circleView = self.viewDataArray[i];
-        circleView.mj_x = viewPoint.x;
-        circleView.mj_y = viewPoint.y;
+        circleView.mj_x = viewPoint.x - CircleOptionSmallRadius;
+        circleView.mj_y = viewPoint.y - CircleOptionSmallRadius;
     }
 }
+
+
+-(NSMutableArray *)getViewData{
+    
+    return self.viewDataArray;
+}
+
 
 @end
