@@ -34,8 +34,10 @@ typedef NS_ENUM(NSInteger,ViewLocation){
     transparentView.alpha = 1;
     transparentView.backgroundColor = [UIColor whiteColor];
     [turnView addSubview:transparentView];
-    [transparentView startUpTurntableFunction];
+    //[transparentView startUpTurntableFunction];
     turnView.transparentView = transparentView;
+    UIRotationGestureRecognizer *turnGes = [[UIRotationGestureRecognizer alloc]initWithTarget:turnView action:@selector(turnRote:)];
+    [transparentView addGestureRecognizer:turnGes];
     
     //旋转层的东西
     //  圆圈
@@ -67,7 +69,20 @@ typedef NS_ENUM(NSInteger,ViewLocation){
     return turnView;
 }
 
-+(UIView *)createCircleView:(NSInteger)location{
+//旋转事件
+
+-(void)turnRote:(UIRotationGestureRecognizer *)rote
+{
+    
+    //通过transform 进行旋转变换
+    self.transparentView.transform = CGAffineTransformRotate(self.transparentView.transform, rote.rotation);
+    //将旋转角度 置为 0
+    rote.rotation = 0;
+    
+}
+
+
++(UIButton *)createCircleView:(NSInteger)location{
     CGRect locationRect;
     switch (location) {
         case LeftLocation:
@@ -89,11 +104,17 @@ typedef NS_ENUM(NSInteger,ViewLocation){
             break;
     }
     
-    UIView *moveCircleView = [[UIView alloc]initWithFrame:locationRect];
+    UIButton *moveCircleView = [[UIButton alloc]initWithFrame:locationRect];
+    [moveCircleView addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     moveCircleView.backgroundColor = [UIColor redColor];
     moveCircleView.layer.masksToBounds = YES;
     moveCircleView.layer.cornerRadius = MoveCircleRadius;
     return moveCircleView;
+}
+
++(void)btnClick{
+    DLog(@"按钮的响应");
+    
 }
 
 @end

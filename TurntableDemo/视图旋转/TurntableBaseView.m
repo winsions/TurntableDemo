@@ -23,7 +23,6 @@
 
 @property (nonatomic)BOOL isStartTurntable;
 @property (nonatomic,assign) float angle;
-@property (nonatomic,strong) NSTimer * timer;
 @property (nonatomic,assign) BOOL updateEnable;
 @property (nonatomic,strong) NSString *taskMark;
 
