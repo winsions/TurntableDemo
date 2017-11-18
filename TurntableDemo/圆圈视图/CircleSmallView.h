@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CircleViewModel.h"
 
-@interface CircleSmallView : UIView
+@interface CircleSmallView : UIButton
 
 +(CircleSmallView *)createSmallCircleView;
 

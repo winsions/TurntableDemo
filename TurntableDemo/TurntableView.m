@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger,ViewLocation){
 
 @property (nonatomic,strong)TurntableBaseView *transparentView;
 
+@property (nonatomic ,strong) UIView *leftView;
+
 @end
 
 @implementation TurntableView
@@ -52,6 +54,7 @@ typedef NS_ENUM(NSInteger,ViewLocation){
     //yuan
     UIView *leftView = [self createCircleView:LeftLocation];
     [transparentView addSubview:leftView];
+    turnView.leftView = leftView;
     
     UIView *upView = [self createCircleView:UpLocation];
     [transparentView addSubview:upView];
@@ -73,12 +76,11 @@ typedef NS_ENUM(NSInteger,ViewLocation){
 
 -(void)turnRote:(UIRotationGestureRecognizer *)rote
 {
-    
     //通过transform 进行旋转变换
     self.transparentView.transform = CGAffineTransformRotate(self.transparentView.transform, rote.rotation);
+    self.leftView.transform = CGAffineTransformRotate(self.leftView.transform, -rote.rotation);
     //将旋转角度 置为 0
     rote.rotation = 0;
-    
 }
 
 
@@ -105,6 +107,10 @@ typedef NS_ENUM(NSInteger,ViewLocation){
     }
     
     UIButton *moveCircleView = [[UIButton alloc]initWithFrame:locationRect];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 2 * MoveCircleRadius, 2 * MoveCircleRadius)];
+    label.textAlignment =  NSTextAlignmentCenter;
+    label.text = @"测";
+    [moveCircleView addSubview:label];
     [moveCircleView addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     moveCircleView.backgroundColor = [UIColor redColor];
     moveCircleView.layer.masksToBounds = YES;

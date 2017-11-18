@@ -10,11 +10,10 @@
 #import "CircleSmallView.h"
 #import "CircleViewManger.h"
 
-@interface CircleLayoutPathView : TurntableBaseView
+@interface CircleLayoutPathView : UIView
 
 @property (nonatomic,strong)CircleViewManger *viewManger;
 
 +(CircleLayoutPathView *)createLayoutPathWithData:(CircleViewManger *)viewManger;
-
 
 @end

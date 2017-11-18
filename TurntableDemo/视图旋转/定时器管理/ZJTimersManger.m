@@ -41,7 +41,6 @@
  定时器主响应方法
  */
 -(void)timerMainResponse{
-    DLog(@"定时器");
     if (self.taskContainer.count == 0 || self.statisticsTimeContainer.count == 0) {
         //暂时关闭定时器
         self.isStart = NO;
@@ -57,7 +56,6 @@
  处理定时器任务
  */
 -(void)dealTimerTask{
-    DLog(@"定时器开始执行任务");
     for (int index = 0; index < self.taskContainer.count; index++) {
         ZJTimerTaskModel *taskModel = [self.taskContainer objectAtIndex:index];
         ZJTimerTaskStatisticsTimeModel *statisticsModel = [self.statisticsTimeContainer objectAtIndex:index];

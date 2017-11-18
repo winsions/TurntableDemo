@@ -36,14 +36,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.view addSubview:[TurntableView createTurnableView]];
-    /*
+    //[self.view addSubview:[TurntableView createTurnableView]];
+    
     [self createData];
     CircleViewManger *viewManger = [CircleViewManger mangerWithData:self.dataArray];
     [viewManger setUILayoutWithType:UICircleLayout];
     CircleLayoutPathView *pathView = [CircleLayoutPathView createLayoutPathWithData:viewManger];
     [self.view addSubview:pathView];
-     */
+     
 }
 
 

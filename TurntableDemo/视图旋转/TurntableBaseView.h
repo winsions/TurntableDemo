@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+ 
+ touch  实现视图旋转
+ 
+ */
+
 @interface TurntableBaseView : UIView
 
 -(void)startUpTurntableFunction;

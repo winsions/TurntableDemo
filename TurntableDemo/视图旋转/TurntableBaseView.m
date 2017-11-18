@@ -9,16 +9,6 @@
 #import "TurntableBaseView.h"
 #import "ZJTimersManger.h"
 
-#define WIDTH [UIScreen mainScreen].bounds.size.width
-#define HEIGHT [UIScreen mainScreen].bounds.size.height
-#define CircleRadius 100
-#define CircleDiam (2*CircleRadius)
-#define MoveCircleRadius 30
-
-#define screenW self.view.bounds.size.width
-#define RADIAN_TO_DEGREE(__ANGLE__) ((__ANGLE__) * 180/M_PI)
-#define DEGREE_TO_RADIAN(__ANGLE__) ((__ANGLE__) * M_PI/180.0)
-
 @interface TurntableBaseView()
 
 @property (nonatomic)BOOL isStartTurntable;

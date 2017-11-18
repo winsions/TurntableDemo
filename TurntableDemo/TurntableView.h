@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "TurntableBaseView.h"
 
+/*
+ 
+ 旋转手势，实现视图旋转。
+ 
+ */
+
 @interface TurntableView : UIView
 
 +(TurntableView *)createTurnableView;
